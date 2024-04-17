@@ -1,12 +1,11 @@
-import { NgModel } from "@angular/forms";
 import { BrowserModule } from "@angular/platform-browser";
-import { AppComponent } from "./app.component";
-import bootstrap from "../main.server";
+import { NgModule } from "@angular/core";
+import { NavbarComponent } from "./core/components/navbar/navbar.component";
 
-@NgModel({
-    import: [BrowserModule],
-    declarations: [AppComponent],
-    bootstrap: [AppComponent]
+@NgModule({
+    imports: [BrowserModule, NavbarComponent],
+    declarations: [],
+    bootstrap: []
 })
 
-export class AppModule{}
+export class AppModule { }
